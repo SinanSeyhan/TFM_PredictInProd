@@ -25,7 +25,6 @@ app.add_middleware(
 def index():
     return {"greeting": "Hello world"}
 
-
 @app.get("/predict")
 def predict(pickup_datetime, pickup_longitude, pickup_latitude, dropoff_longitude, dropoff_latitude, passenger_count):
     '''
